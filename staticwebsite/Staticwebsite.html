@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onlineshop för datorkomponenter</title>
+    <!--dokument title shown in browsers title bar or page-tab-->
+    <link rel="stylesheet" type="text/css" href="Staticwebsite.css" />
+    <!--link to external style sheet/css-->
+  </head>
+
+  <body>
+    <header class="header">
+      <!--using header to define class instead of div to improve readability. Class attributes can be called for and styled in CSS.-->
+      <a href="#default" class="logo"
+        >DATANET
+        <!--logo class with DATANET as text. Links to itself with href="#default"-->
+      </a>
+
+      <nav class="header-right">
+        <!--declared class for the top-right navigation-bar. Will be asigned values in CSS; one of which is to be located right on the page-->
+        <a href="#Home" title="Hem">Hem</a>
+        <a href="#Information" title="Information">Information</a>
+        <a href="#Contakt" title="Kontakt">Kontakt</a>
+        <!--relative href attributes; enabling users to jump between three parts of the website with a mouse-click-->
+      </nav>
+    </header>
+
+    <!--navigation-bar for the category-sections on the website. -->
+    <nav class="mainNav-container">
+      <!--container class for the navigation-bar of the category-sections on the website. Assigning grid-based layout values in css.-->
+      <nav class="m1">
+        <!--classes for each mainNav-tabs, enabling separate styling options in css-->
+        <a href="#Datorkomponenter" class="navLinks">
+          <dfn title="Datorkomponenter: grafikkort och processorer"
+            ><i class="gg-desktop"></i></dfn
+        ></a>
+        <!--definition element tags to specify content on mouse hover-->
+      </nav>
+      <nav class="m2">
+        <a href="#Datorskärmar" class="navLinks">
+          <dfn
+            title="Datorskärmar: storlekar från 22 tum upp till 32, upplösning från 1080p upp till 4k och uppdateringsfrekvens från 60hz till 144hz"
+            ><i class="gg-screen"></i></dfn
+        ></a>
+      </nav>
+      <nav class="m3">
+        <a href="#Datortillbehör" class="navLinks">
+          <dfn title="Datortillbehör: tangentbord och datormöss"
+            ><i class="gg-mouse"></i></dfn
+        ></a>
+      </nav>
+      <nav class="m4">
+        <a href="#Ljud" class="navLinks">
+          <dfn title="Ljud: hörlurar och högtalare"
+            ><i class="gg-headset"></i></dfn
+        ></a>
+      </nav>
+    </nav>
+
+    <!--end tag for mainNav class, containing all the content inbetween.-->
+
+    <main id="main">
+      <section class="homeImg">
+        <!--class to add and style background image for home section in css-->
+        <section class="Home" tabindex="0">
+          <!--class to style the text-->
+          <!--enables tab-navigation for keyboard-only users. Will be added to every section.-->
+          <h2>Webbshop</h2>
+          <p>
+            Här finns allt från datorkomponenter (grafikkort, processorer och
+            RAM-minne) till datorskärmar av olika storlekar och panel-typer. Det
+            finns även olika hörlurar och högtalare i ljudsektionen, samt
+            tillbehöver för datorer (tangenbord och datormöss).
+          </p>
+          <p>
+            Använd menyerna ovan för att navigera kring sidan, eller
+            TAB-tangenten på tangenbordet. För att öppna upp den kategori som
+            intresserar dig, tryck på rubriken med muspekaren eller med
+            mellanslag (vid tab-navigering, hoppa ett steg till för att
+            möjliggöra detta).
+          </p>
+
+          <p>
+            Om du är intresserad av aktuella priser, gå till följande webbsida -
+            <a href="https://www.prisjakt.nu/" class="prisjakt" target="_blank"
+              ><dfn
+                title="Extern-länk till sveriges största prisjämförelse-webbsida"
+                ><em>www.prisjakt.nu</em></dfn
+              ></a
+            >
+          </p>
+          <!--link emphasized with em-tag, resulting in emphasized pronunciation from screen readers-->
+        </section>
+      </section>
+
+      <section class="categoryWrapper">
+        <!--container for semantic content, wrapping separate child-elements, or nested parts-->
+        <section class="nested1">
+          <section>
+            <label class="openClose" for="_1">
+              <!--label element and "for" to bind element-->
+              <!--enables open-close functionality, added to six different headings in the document-->
+              <a id="Datorkomponenter" tabindex="0">Datorkomponenter</a>
+            </label>
+            <input id="_1" type="checkbox" />
+            <div>
+              <!--wrapper div enables the layout to be centered on the page-->
+              <h4>Grafikkort (Nvidia & ATI Radeon):</h4>
+              <h5>Nvidia</h5>
+              <p>GTX 1650 (4GB) - 1500 kr</p>
+              <p>RTX 2060 (6GB) - 3500 k</p>
+              <p>RX 570 (4GB) - 1500 kr</p>
+              <p>RX 5600 (6GB) - 3500 kr</p>
+
+              <h4>Processorer/CPU (Intel & AMD):</h4>
+              <h5>Intel</h5>
+              <p>Intel Core i5 10400F (6/12, 2,9GHz) - 1700 kr</p>
+              <p>Intel Core i7 10700K (8/16, 3,8GHz) - 4000 kr</p>
+              <h5>AMD</h5>
+              <p>AMD Ryzen 5 3600 (6/12, 3,6GHz) - 2000 kr</p>
+              <p>AMD Ryzen 7 3700X (8/16, 3,6GHz) - 3400 kr</p>
+
+              <h4>RAM-minne:</h4>
+              <p>Crucial 2x4GB (2666MHz) - 300 kr</p>
+              <p>Corsair 2x8GB (3200MHz) - 600 kr</p>
+              <p>Kingston 2x16GB (3600MHz) - 1800 kr</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="nested2">
+          <section>
+            <label class="openClose" for="_2">
+              <a id="Datorskärmar" tabindex="0">Datorskärmar</a>
+            </label>
+            <input id="_2" type="checkbox" />
+            <div>
+              <h4>Budget:</h4>
+              <p>Dell 22 tum (1080p, 60hz, TN) - 1000 kr</p>
+              <h4>Gaming:</h4>
+              <p>Asus 27 tum (1440p, 144hz, VA) - 3000 kr</p>
+              <h4>Video och foto redigering:</h4>
+              <p>BenQ 32 tum (2160p, 60hz, IPS) - 6000 kr</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="nested3">
+          <section>
+            <label class="openClose" for="_3">
+              <a id="Datortillbehör" tabindex="0">Datortillbehör</a>
+            </label>
+            <input id="_3" type="checkbox" />
+            <div>
+              <h4>Tangentbord:</h4>
+              <p>
+                Logitech vanligt tangenbord (Kabelanslutet, Membran, Standard) -
+                300 kr
+              </p>
+              <p>Steelseries Cherry MX (Trådlöst, Mekaniskt, TKL) - 1500 kr</p>
+              <h4>Datormus:</h4>
+              <p>Logitech G502 (Kabelansluten, 16000 dpi) - 500 kr</p>
+              <p>Apple Magic Mouse 2 (Trådlös, 1300dpi) - 900 kr</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="nested4">
+          <label class="openClose" for="_4">
+            <a id="Ljud" tabindex="0">Ljud</a>
+          </label>
+          <input id="_4" type="checkbox" />
+          <div>
+            <h4>Hörlurar:</h4>
+            <p>OnePlus Buds (Trådlösa/bluetooth, in-ear) - 900 kr</p>
+            <p>Sony WH-1000XM3 (Trådlösa/bluetooth, over-ear - 2500 kr</p>
+            <h4>Högtalare:</h4>
+            <p>Google Home (Trådlös/bluetooth) - 600 kr</p>
+            <p>Logitech Z623 (Kabelansluten, 2.1) - 1200 kr</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <aside>
+      <!--aside tag used for content indirectly related to the main content-->
+      <a id="Information" tabindex="0">
+        <h2>Information</h2>
+      </a>
+
+      <label class="openClose" for="_5">
+        <a id="Installera" tabindex="0">
+          - Hur installerar man datorkomponenter?
+        </a>
+      </label>
+      <input id="_5" type="checkbox" />
+      <div>
+        <p>
+          Det kan vara svårt att veta hur man ska bygga en dator om man aldrig
+          har gjort det förut. Olika komponenter ska sitta på olika ställen och
+          det blir lätt fel om man inte vet hur man ska gå tillväga.
+        </p>
+
+        <p>
+          Manualer som inkluderas vid köp av komponenter brukar ofta göra denna
+          processen enklare, men om man vill förstå hur det går till innan man
+          köper något så kan instruktionsvideor på youtube vara till hjälp.
+        </p>
+        <br />
+        <!--adds a gap-->
+        <p>
+          Nedan är en video som visar i steg hur man installerar komponenter som
+          CPU:n, grafikkort, RAM-minne och hårddiskar.
+        </p>
+        <p>
+          (För att aktivera undertext, starta videon och tryck på "c" på
+          tangenbordet eller klicka med muspekaren på "Undertexter" ikonen).
+        </p>
+
+        <aside class="videoWrapper">
+          <!--wrapping video with a class and correcting the position of the video to be responsive-->
+          <iframe
+            width="1000"
+            height="500"
+            src="https://www.youtube.com/embed/c85abDXIq5I"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <!--embedded youtube video. Allows the option of enabling captions if needed-->
+        </aside>
+
+        <p>Här finns även en textbaserad guide i ett pdf-dokument:</p>
+        <aside class="pdfWrapper">
+          <!--wrapping pdf same way as video-->
+          <embed
+            src="files/How-To-Build-Your-Own-PC.pdf"
+            type="application/pdf"
+            width="1000"
+            height="500"
+          />
+          <!--embedded pdf. Choose to keep the toolbar and controlls for accessibility-->
+        </aside>
+      </div>
+      <br />
+    </aside>
+
+    <aside>
+      <!--other aside content containing explainations for every category items and attributes-->
+      <label class="openClose" for="_6">
+        <a id="Förklaringar" tabindex="0">
+          - Begreppförtydligande/förklaringar av specifikationer
+        </a>
+      </label>
+      <input id="_6" type="checkbox" />
+      <div>
+        <h4>Grafikkort</h4>
+        <p>
+          För grafikkort brukar man i de flesta fall kunna utgå från att ju
+          högre pris, desto högre prestanda. Det finns olika generationer av
+          grafikkort som förnyas varje/varannat år; såsom gtx 10-serien som kom
+          ut för några år sedan, till 20-serien som vi har idag. Detta gäller
+          även för ATI Radeon.
+        </p>
+        <p>
+          Kapacitetmängden som står inom paranteser efter grafikkorten refererar
+          till Video Random Access Memory ( VRAM ), vilket är minnet på
+          grafikkortet som används för att lagra bilddata som datorn visar. VRAM
+          fungerar som en buffert mellan din CPU och ditt grafikkort processor.
+          Ett grafikkort med mer VRAM är bättre för att köra datorspel, video
+          -redigeringsprogram, grafikprogram och andra grafikintensiva program.
+        </p>
+
+        <h4>Processorer</h4>
+        <p>
+          En flerkärning processor behövs för att utföra datorns uppgifter, och
+          då står det mellan tillverkarna Intel samt AMD. Intels basmodell för
+          enklare surfning kallas Core i3, men för tyngre arbete eller viss
+          gaming behöver du en Core i5. För riktigt tunga spel och beräkningar
+          behöver du en Core i7. Motsvarande modeller inom AMD är Ryzen 3/5/7
+          och Threadripper.
+        </p>
+        <p>
+          Beteckningarna "K" och "X" står för att de är snabbare än vanliga
+          modeller, samt att de är "upplåsta"/har högre kapacitet för
+          överklockning; ett begrepp som innebär att användaren kan ändra bl.a.
+          klockfrekvensen på processorn till en högre hastighet genom en
+          konfigurering i datorns BIOS. Rekommenderas inte för användare utan
+          några förkunskaper.
+        </p>
+
+        <h4>RAM-minne</h4>
+        <p>
+          Din dator behöver internminne för att fungera. Den här komponenten
+          låter datorn lagra information lättåtkomligt som kan hämtas snabbt.
+          Rent praktiskt betyder mer RAM-minne att datorn kan ha fler program
+          igång samtidigt, utan att förlora prestanda. Även för ett internminne
+          är det avgörande hur snabbt minnet klarar av att hämta och spara data,
+          så snabbt internminne kan bidra med en stor prestandaboost.
+        </p>
+
+        <h4>Datorskärmar</h4>
+        <p>
+          Det viktigaste att tänka på när man väljer skärm är vilken storlek,
+          upplösning, uppdateringsfrekvens, responstid och paneltyp man behöver.
+        </p>
+
+        <p>
+          24 tum och 1920x1080 i upplösning är vanliga specifikationer för
+          moderna skärmar och brukar ofta vara fullt dugligt för många
+          konsumenter. Användare som redigerar bilder/film har ofta krav på
+          högre upplösning (som 2160p - 4K), samt högt färgspektrum - vilket
+          paneltypen ips ofta har. Användare som spelar prioriterar ofta lägre
+          responstid och en hög uppdateringsfrekvens (över 120hz).
+        </p>
+
+        <h4>Tangentbord och datormöss</h4>
+        <p>
+          Det finns många olika typer av tangentbord och datormöss att välja
+          mellan med olika egenskaper som passar för olika typer av användare.
+          Det finns tangentbord och datormöss med sladd, samt trådlösa. För
+          tangentbord kan man välja mellan olika storlekar;
+          fullstorlekstangentbord har ofta extraknappar och numpad, medan andra
+          kan ha en mer kompakt layout som kan passa gamers eller personer med
+          lite utrymme bättre. Det finns även olika tangenttyper, eller brytare,
+          att välja mellan. Vanliga tangentbord brukar ha membran-brytare, medan
+          mekaniska brytare är vanligt för gamingtangentbord.
+        </p>
+
+        <p>
+          Datormöss kan också variera i egenskaper och i passform. Dyrare möss
+          kan vara mer ergonomiska, trådlösa eller ha hög dpi, en egenskap som
+          påverkar hur snabbt/långsamt muspekaren kan röra sig och kan vara
+          viktigt för gamers. Det viktigaste att tänka på är hur musen passar
+          din hand, så det rekommenderas ofta att man testar hur datormusen
+          känns i en butik innan man köper någon.
+        </p>
+
+        <h4>Hörlurar och högtalare</h4>
+        <p>
+          När man väljer hörlurar och högtalare så finns det olika saker att
+          tänka på. Vill man ha hörlurar som är väldigt portabla och passar till
+          träning så kan in-ear hörlurar vara passande. Detta gäller även med
+          högtalare - bluetooth-varianter brukar ofta vara små och portabla.
+        </p>
+        <p>
+          Nackdelen med denna typen är att de ofta har låg "soundstage", ett
+          begrepp som beskriver hörlurars möjlighet att ge lyssnaren en
+          tredimensionell ljudupplevelse; som att musiken/filmen spelas precis
+          framför dig. Det finns andra egenskaper som påverkar ljudkvaliteten,
+          men "soundstage" är en sak som ofta skiljer sig markant för in-ears
+          och open-ear hörlurar, samt billigare bluetooth högtalare och större
+          system (2.1, 5.1 osv). Ha i åtanke att pris har inte alltid en
+          korrelation med bättre ljud; generellt kan man få väldigt bra
+          prestanda under 2000 kr för hörlurar, något mer för högtalare.
+        </p>
+      </div>
+      <br />
+      <br />
+      <!--tag for single line break-->
+    </aside>
+
+    <footer>
+      <!--tag suitable for contact information at the end of the document/website-->
+      <a id="Contakt" tabindex="0">
+        <i class="gg-mail"></i>
+        <h2>Kontakt</h2>
+      </a>
+      <p>Namn: Henrik Frohm</p>
+      <p>E-mail: henrik.frohm@chasacademy.se</p>
+      <p>Telefonnummer: 12345</p>
+    </footer>
+  </body>
+  <!--end body tag-->
+</html>
+<!--end html tag-->
